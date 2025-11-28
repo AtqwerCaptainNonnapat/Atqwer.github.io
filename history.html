@@ -28,7 +28,7 @@
             padding: 30px;
             text-align:center;
             border-radius: 10px;}
-      section{background: linear-gradient(hotpink,skyblue,white);
+      section{background: linear-gradient(limegreen,yellow,white);
              padding: 15px;
              margin: 20px auto;
              width: 70%;
@@ -36,6 +36,15 @@
       p{text-indent: 2em;}
 
       .zoom:hover{transform: scale(1.5); cursor:pointer;}
+
+      img:hover{animation:glowcolor 1.2s infinite alternate;}
+      @keyframes glowcolor{
+        0% {box-shadow: 0 0 20px hotpink;}
+        25% {box-shadow: 0 0 20px skyblue;}
+        50% {box-shadow: 0 0 20px gold;}
+        75% {box-shadow: 0 0 20px darkviolet;}
+        100% {box-shadow: 0 0 20px red;}
+      }
            </style>
   </head>
   <body background="https://res.cloudinary.com/ineoslive/image/upload/c_auto,w_1280/IneosCapitalv3/globalassets/ineos-group/sites/belgium/football/voetbal-3-algemene-foto-website.jpeg">
