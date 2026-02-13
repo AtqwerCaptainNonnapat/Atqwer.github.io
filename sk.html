@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำโรงเรียนสวนกุหลาบวิทยาลัย</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ตั้งค่าพื้นฐาน */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Kanit', sans-serif;
+            background: linear-gradient(135deg, #f48fb1 0%, #90caf9 100%); /* ไล่สีชมพูไปฟ้า */
+            color: #444;
+            line-height: 1.8;
+        }
+
+        /* เมนูด้านบน */
+        nav {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #d81b60; /* สีตัวอักษรเมนู */
+            margin: 0 15px;
+            font-size: 1.1em;
+            font-weight: 600; /* ใช้ CSS ทำตัวหนาแทน <strong> */
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #1976d2; /* เปลี่ยนเป็นสีฟ้าเมื่อเอาเมาส์ชี้ */
+        }
+
+        /* กล่องเนื้อหาหลัก */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* การ์ดเนื้อหา (สีขาวโค้งมน) */
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* หัวข้อ */
+        h1 {
+            color: #c2185b; /* ชมพูเข้ม */
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #1565c0; /* ฟ้าเข้ม */
+            border-bottom: 3px solid #f8bbd0;
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #555;
+            margin-top: 30px;
+        }
+
+        /* รูปภาพ */
+        img {
+            max-width: 100%;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* ลบจุด Bullet ออกจาก List และจัดกึ่งกลาง */
+        ul {
+            list-style-type: none; /* สั่งไม่ให้มีจุด */
+            padding: 0;
+        }
+
+        li {
+            background-color: #e3f2fd; /* พื้นหลังสีฟ้าอ่อนให้แต่ละบรรทัด */
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1.1em;
+        }
+
+        /* ส่วนผู้จัดทำ */
+        .creator-box {
+            background-color: #fce4ec; /* พื้นหลังชมพูอ่อน */
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 30px;
+            display: inline-block;
+        }
+
+        .bold-text {
+            font-weight: 600;
+            color: #c2185b;
+        }
+
+        /* กล่องสัญลักษณ์แบบ Flex (เรียงแนวนอน) */
+        .symbol-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .symbol-item {
+            flex: 1;
+            min-width: 200px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        /* แผนที่ */
+        .map-frame {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 0.9em;
+            background-color: rgba(0,0,0,0.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">หน้าแรก</a>
+        <a href="#history">ประวัติ</a>
+        <a href="#vision">วิสัยทัศน์</a>
+        <a href="#symbols">สัญลักษณ์</a>
+        <a href="#buildings">อาคาร</a>
+        <a href="#map">แผนที่</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="home" class="card">
+            <h1>โรงเรียนสวนกุหลาบวิทยาลัย</h1>
+            <span style="font-size: 1.2em; color: #777;">Suankularb Wittayalai School</span>
+            
+            <br>
+            <img src="https://via.placeholder.com/800x450?text=รูปภาพโรงเรียนสวยๆ" alt="บรรยากาศโรงเรียน">
+
+            <div class="creator-box">
+                <h3>ผู้จัดทำโครงงาน</h3>
+                <p><span class="bold-text">ชื่อ-นามสกุล :</span> เด็กชายรักเรียน สวนกุหลาบ</p>
+                <p><span class="bold-text">ชั้น :</span> มัธยมศึกษาปีที่ 1 ห้อง 9</p>
+                <p><span class="bold-text">เลขที่ :</span> 99</p>
+            </div>
+        </section>
+
+        <section id="history" class="card">
+            <h2>ประวัติความเป็นมา</h2>
+            <p>
+                โรงเรียนสวนกุหลาบวิทยาลัย เป็นโรงเรียนรัฐบาลแห่งแรกของประเทศไทย 
+                ก่อตั้งโดยพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว (รัชกาลที่ 5) 
+                เมื่อวันที่ 8 มีนาคม พ.ศ. 2425 เดิมตั้งอยู่ในพระบรมมหาราชวัง 
+                มีความเป็นมายาวนานและผลิตบุคลากรสำคัญของประเทศมากมาย
+            </p>
+        </section>
+
+        <section id="vision" class="card">
+            <h2>วิสัยทัศน์และพันธกิจ</h2>
+            
+            <div style="background: #e1f5fe; padding: 20px; border-radius: 15px; margin-bottom: 20px;">
+                <h3 style="color: #0277bd; margin-top:0;">วิสัยทัศน์ (Vision)</h3>
+                <p style="font-size: 1.2em; font-style: italic;">"เป็นผู้นำทางวิชาการ สืบสานพระราชปณิธาน สร้างสุภาพบุรุษสวนกุหลาบ"</p>
+            </div>
+
+            <h3 style="color: #d81b60;">พันธกิจ (Mission)</h3>
+            <ul>
+                <li>พัฒนาผู้เรียนให้เป็นเลิศทางวิชาการ</li>
+                <li>ปลูกฝังคุณธรรม จริยธรรม และความเป็นสุภาพบุรุษ</li>
+                <li>ส่งเสริมศักยภาพครูและบุคลากรสู่มาตรฐานสากล</li>
+                <li>บริหารจัดการด้วยระบบคุณภาพ</li>
+            </ul>
+        </section>
+
+        <section id="symbols" class="card">
+            <h2>สัญลักษณ์ประจำโรงเรียน</h2>
+            <div class="symbol-container">
+                <div class="symbol-item">
+                    <img src="https://via.placeholder.com/150?text=ตราโรงเรียน" alt="ตราโรงเรียน" style="width: 120px;">
+                    <p><span class="bold-text">ตราประจำโรงเรียน</span><br>หนังสือ ปากกา ดินสอ ไม้บรรทัด และมงกุฎ</p>
+                </div>
+                <div class="symbol-item">
+                    <div style="width: 100px; height: 100px; background: linear-gradient(to right, #f48fb1 50%, #90caf9 50%); border-radius: 50%; margin: 10px auto;"></div>
+                    <p><span class="bold-text">สีประจำโรงเรียน</span><br>ชมพู - ฟ้า</p>
+                </div>
+                <div class="symbol-item">
+                    <img src="https://via.placeholder.com/150?text=ดอกกุหลาบ" alt="ดอกกุหลาบ" style="width: 120px;">
+                    <p><span class="bold-text">ดอกไม้ประจำโรงเรียน</span><br>กุหลาบพันธุ์จุฬาลงกรณ์</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="buildings" class="card">
+            <h2>อาคารเรียน</h2>
+            
+            <div class="symbol-container">
+                <div class="symbol-item" style="background-color: #fafafa;">
+                    <img src="https://via.placeholder.com/300x200?text=ตึกยาว" alt="ตึกยาว">
+                    <h3>ตึกยาว (ตึกสวนกุหลาบ)</h3>
+                    <p>สถาปัตยกรรมนีโอคลาสสิก ยาวที่สุดในไทย</p>
+                </div>
+                <div class="symbol-item" style="background-color: #fafafa;">
+                    <img src="https://via.placeholder.com/300x200?text=ตึกวิทย์" alt="อาคารดำรงฯ">
+                    <h3>อาคารดำรงราชานุภาพ</h3>
+                    <p>ศูนย์รวมการเรียนรู้วิทยาศาสตร์</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="map" class="card">
+            <h2>แผนที่และการเดินทาง</h2>
+            <p>ที่อยู่ : 88 ถนนตรีเพชร แขวงวังบูรพาภิรมย์ เขตพระนคร กรุงเทพมหานคร</p>
+            <iframe class="map-frame" src="https://maps.google.com/maps?q=Suankularb%20Wittayalai%20School&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+        </section>
+
+    </div>
+
+</body>
+</html>
